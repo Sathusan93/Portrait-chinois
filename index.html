@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portrait Chinois</title>
+    <style>
+        body{
+            background-color: black;
+            margin: 0;
+            font-size: 1.3rem;
+        }
+        h1{
+            color: black;
+            text-align: center;
+            font-family: 'Lemon', serif;
+            font-size: 5rem;
+        }
+        .description{
+            color: white;
+            text-align: center;
+            margin-left: 100px;
+            width: 40%;
+            margin-left: 800px;
+            margin-bottom: 200px; 
+        }
+        .text{
+            margin-top: 350px;
+            margin-bottom: -270px;
+            border: #ace5f3 solid ;
+            border-radius: 10px ;
+            height: auto;
+            padding: 12px;
+            
+        }
+        h2{
+            color: white;
+            text-align: center;
+        }
+        .popup{
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+
+            background-color: black;
+            z-index: 100;
+        }
+        .popup-visible{
+            background-color: black;
+            height: 300px;
+            color: white;
+
+        }
+        .popup-invisible{
+            background-color: black;
+            height: 3em;
+            
+            
+        }
+        .images{
+            height: 250px;
+            width: 350px;
+            border-radius: 20px;
+            margin-top:auto;
+            margin-bottom: 0;
+            margin-left: -500px;
+            display: block;
+            margin-top: -350px;
+        }
+        img:hover{
+            transform: scale(1.1);
+            transition: 1s;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+        }
+        li a{
+            position: relative;
+            text-decoration: none;
+            color: plum;
+            padding: 10px;
+            text-transform: uppercase;
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+        .fontsmenu{
+            font-family: 'Nunito Sans', sans-serif;
+            font-family: serif;
+        }
+        ul {
+            list-style-type: none;
+            width: auto;
+        }
+        ul {
+            width: 80%;
+            margin: auto;
+            list-style-type: none;
+            padding: 20px;
+            padding-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding-bottom: 10px;
+        }
+        nav{
+            width: 100%;
+            position: fixed;
+            z-index: 1000;
+            background-color: black;
+        }
+        form{
+            color: white;
+        }
+        .formu {
+            width: 490px;
+            height: 500px;
+            --border-radius: 15px;
+            --border-width: 4px;
+            appearance: none;
+            position: relative;
+            padding: 1em 2em;
+            border: solid plum;
+            background-color:black ;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            z-index: 0;
+            border-radius: 15px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            box-sizing: border-box;
+            z-index: 0;  
+        }
+        .heading{
+            text-align: center;
+            background-image: linear-gradient(
+            to bottom,
+            rgba(0,127,255),rgba(116, 208, 248),
+            rgba(204, 204, 255),rgba(254,231,240),rgba(150,131,236),rgba(223,115
+            ,255),rgba(255,0,255));
+            height: 850px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .heading-fade {
+            width: 100%;
+            height: 10vh;
+            background: linear-gradient(to bottom, transparent, black);
+            background-color: rgba(0, 0, 0, 0);
+            background-position-x: 0%;
+            background-position-y: 0%;
+            background-repeat: repeat;
+            background-attachment: scroll;
+            background-image: linear-gradient(transparent, black);
+            background-size: auto;
+            background-origin: padding-box;
+            background-clip: border-box;
+            position: absolute;
+            bottom: 0;
+}
+        input[type="submit"]{
+            background-color: plum;
+            border-radius: 10px;
+            color: white;
+        }
+        input{
+            width: 300px;
+            height: 30px; 
+            margin: auto;
+            margin-bottom: 20px;
+            border-radius: 2px;
+        }
+        footer{
+            cursor: pointer;
+        }
+        .boutonhaut{
+            width: 5%;
+            margin-left: 30px;
+            padding-top: -6px;
+            padding-top: 10px;
+            scroll-behavior: smooth;
+            
+
+        }
+        footer h2{
+            margin: 0;
+            padding: 6px;
+        }
+        footer p{
+            text-align: center;
+        }
+        .desp{
+            border: solid white;
+        }
+        li a:hover {
+            transition: 500ms ease;
+            color: #ace5f3;
+            
+        }
+        .section{
+            
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: center;  
+        }
+
+    </style>
+</head>
+<body>
+    <link rel="icon" href="img/nuage.png" />
+    <nav>
+        <ul>
+            <li><a href="#top">accueil </a></li>
+            <li><a href="#a1">couleur</a></li>
+            <li><a href="#a2">animal</a></li>
+            <li><a href="#a3">voiture</a></li>
+            <li><a href="#a4">film</a></li>
+            <li><a href="#a5">ville</a></li>
+            <li><a href="#a6">sport</a></li>
+            <li><a href="#a7">fruit</a></li>
+            <li><a href="#formulaire">et vous?</a></li>
+        </ul>
+        <div id="#a1" class="section"></div>
+    </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" class="fontsmenu">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Nunito+Sans:opsz,wght@6..12,200&family=Spectral:wght@400;700&display=swap" rel="stylesheet">
+    <br>
+    <div class="heading">
+    <h1> MON PORTRAIT CHINOIS</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    </div>
+    <div class="heading-fade"></div>
+    <br>
+    <section id="resultats"></section>
+    <br>
+    <section id="formulaire" class="formu">
+    <form>
+        Tu veux ajouter une nouvelle analogie ?
+        <br>
+        Complète le formulaire :
+        <br>
+        <label for="analogie">Si j'étais</label>
+        <br>
+        <input type="text" placeholder="(exemple:une fleur)" id="analogie" name="analogie" required>
+        <br>
+        <label for="valeurAnalogie">Je serais</label>
+        <br>
+        <input type="text" placeholder="(exemple:une rose)" id="valeurAnalogie" name="valeurAnalogie" required>
+        <br>
+        <label for="raison">Parce que </label>
+        <br>
+        <input type="text" placeholder="(exemple: parceque c'est ma fleur préférée...)" id="raison" name="raison" required>
+        <br>
+        <label for="img">Une image </label>
+        <br>
+        <input type="url" placeholder="URL de l'image" id="img" name="img" required>
+        <br>
+        <label for="Email">Mail*</label>
+        <br>
+        <input type="email" placeholder="Votre Mail" id="Email" name="Email" required>
+        <br>
+        <label for="Env"></label>
+        <input id="Env" type="submit" value="Envoyer"></imput>
+
+    </form>
+    </section>
+    <footer>
+      <div class="popup popup-visible mention" >
+     <br>  
+    <h2 >Mentions Légales</h2>
+    <p>Edité par Bojan Sathusan,étudiant en BUT MMI à l'université Gustave Eiffel.</p>
+    <p>Les images proviennent de Google.com,freepik.com,pinterest.com </p>
+    <p>Fonts : Nunito,Lemon  </p>
+    <p>Hébergeur: université Gustave Eiffel,
+        2 rue Albert Einstein,77420 Champs sur marne 
+        téléphone : 0160958585
+    </p>
+    <p>Législation relative aux données à caractère personnel.
+        Le formulaire permettant la création d’une analogie personnalisée recueille votre adresse de courriel et votre adresse IP. Pour toute question portant sur la collecte ou le traitement de vos données à caractère personnel par l’UPEM, vous pouvez vous diriger vers la personne responsable du traitement des données qui est : Philippe Gambette (philippe.gambette@univ-eiffel.fr). Les fichiers détenus par l'UPEM qui comportent des données à caractère personnel ne seront jamais transmis à des tiers et ne feront jamais l'objet d'une commercialisation.
+   </p>
+   <p>@2024 Tous droit réservés par Sathusan BOJAN.</p>
+</div> 
+    </div>
+    </footer>
+    <a href="#top">
+        <img class="boutonhaut"
+        src="img/bouton haut.png" alt="Haut de page">
+    </a>  
+</body>
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</html>
